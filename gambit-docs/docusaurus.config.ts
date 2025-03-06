@@ -12,7 +12,7 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://aptos-gambit.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/aptosGambit/',
+  baseUrl: '/gambit-docs/',
 
   // GitHub pages deployment config.
   organizationName: 'aptos-gambit', // Your GitHub org/user name
