@@ -1,0 +1,8 @@
+{
+  "label": "Game Mechanics",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Deep dive into the game theory and mechanics behind Aptos Gambit's games."
+  }
+} 
