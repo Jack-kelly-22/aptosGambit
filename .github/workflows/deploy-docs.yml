@@ -1,48 +1,59 @@
-name: Deploy Documentation
+name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches:
-      - main  # or your default branch name
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: './docs/package.json'
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
-      - name: Build documentation
+      
+      - name: Install dependencies
         run: |
-          # Add your documentation build commands here
-          # For example, if using MkDocs:
-          pip install mkdocs-material
-          mkdocs build
-
+          cd docs
+          npm ci
+      
+      - name: Build
+        run: |
+          cd docs
+          npm run docs:build
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'site'  # Output directory of your documentation
+          path: docs/.vitepress/dist
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 
