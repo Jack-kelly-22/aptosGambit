@@ -12,6 +12,7 @@ Aptos Gambit creates social, game-theory-driven multiplayer experiences that cha
 - **Real-time Multiplayer**: Games are played live with multiple participants
 - **Trust Dynamics**: Each game tests players' ability to build and maintain trust
 - **Player vs Player Focus**:games pit players directly against each other in competitive scenarios
+- **In Person Social Gaming**: Games can be played in person with a group of people in a bar, party, or other social setting
 
 ### Strategic Depth
 - **Game Theory Implementation**: Each game incorporates fundamental game theory concepts
@@ -28,11 +29,12 @@ Aptos Gambit creates social, game-theory-driven multiplayer experiences that cha
 
 ### The Gambit Protocol
 
-Our flagship game combines social deduction, strategic decision-making, and risk management. Players join with an entry stake to compete in a high-stakes game of trust and betrayal. Each round, players must collectively decide whether to gamble the pot, eliminate players, split the rewards, or bank their gains.
+Our flagship game combines social deduction, strategic decision-making, and risk management. Players join with an entry stake to compete in a high-stakes game of trust and betrayal. Each round, players must collectively decide whether to gamble the pot, eliminate players, or split the rewards.
 
 [Learn more about The Gambit Protocol →](./gambit-protocol.md)
 
 ### Future Game Concepts
+This game does not aim to be our only game but instead is a proof of concept for the modular approach to game design that we will be taking, seperating the game logic,creation, and settlement allowing for integration of external games. This approach will also allow for users to create their own games and share them with the community.
 
 #### Social Prisoner's Dilemma
 - Large-scale implementation of classic game theory scenario
