@@ -68,8 +68,3 @@ The game can end in several ways:
 - Verifiable randomness
 - Public game history
 - Immutable rules
-
-<!-- ## Next Steps -->
-<!-- - Learn about our [Voting System](./voting-system.md) -->
-<!-- - Understand [Elimination Mechanics](./elimination-rounds.md) -->
-<!-- - Review the [Rewards Structure](./rewards.md)  -->

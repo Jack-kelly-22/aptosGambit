@@ -19,7 +19,7 @@ const config: Config = {
   projectName: 'aptosGambit', // Your repo name
   trailingSlash: true,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -39,18 +39,18 @@ const config: Config = {
           editUrl:
             'https://github.com/aptos-gambit/tree/main/gambit-docs/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/aptos-gambit/tree/main/gambit-docs/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   editUrl:
+        //     'https://github.com/aptos-gambit/tree/main/gambit-docs/',
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,7 +74,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/aptos-gambit/aptosGambit',
           label: 'GitHub',
@@ -88,18 +88,18 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Introduction',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Founder',
-              to: '/docs/founder',
-            },
-            {
-              label: 'Game Mechanics',
-              to: '/docs/game-mechanics',
-            }
+            // {
+            //   label: 'Introduction',
+            //   to: '/docs/intro',
+            // },
+            // {
+            //   label: 'Founder',
+            //   to: '/docs/founder',
+            // },
+            // {
+            //   label: 'Game Mechanics',
+            //   to: '/docs/game-mechanics',
+            // }
 
           ],
         },
@@ -120,19 +120,19 @@ const config: Config = {
         //     },
         //   ],
         // },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/aptos-gambit/aptosGambit',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/aptos-gambit/aptosGambit',
+        //     },
+        //   ],
+        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },

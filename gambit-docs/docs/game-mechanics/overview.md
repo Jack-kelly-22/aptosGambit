@@ -66,6 +66,3 @@ All game mechanics are implemented through smart contracts on the Aptos blockcha
 ## Next Steps
 
 - Learn about the [Gambit Protocol](./gambit-protocol.md) in detail
-- Understand our [Voting System](./voting-system.md)
-- Explore [Elimination Rounds](./elimination-rounds.md)
-- Review the [Rewards System](./rewards.md) 
