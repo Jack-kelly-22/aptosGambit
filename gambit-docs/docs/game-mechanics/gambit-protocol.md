@@ -26,10 +26,7 @@ The Gambit Protocol is our flagship game that combines social deduction, strateg
    - Results displayed to all players
    - Pot and player statuses updated
 
-3. **Discussion Phase** (30 seconds)
-   - Players can communicate
-   - Form alliances or plan strategies
-   - Prepare for next round
+repeat until  an end condition is met
 
 ## Available Actions
 
