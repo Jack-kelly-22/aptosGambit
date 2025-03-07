@@ -6,7 +6,6 @@ sidebar_position: 1
 
 Welcome to Aptos Gambit, a blockchain-powered game studio focused on developing social, game-theory-driven multiplayer experiences on the Aptos blockchain. We specialize in creating strategy-based games that challenge players' decision-making, risk assessment, and social interaction through live competitive gameplay. Our flagship title "The Gambit Protocol" combines the thrill of live events with sophisticated game theory mechanics, bringing players together in real-time competitive experiences where collective choices dictate the outcome.
 
-## Overview
 
 ## Overview
 Aptos Gambit creates an entirely new category of blockchain-powered live experiences that challenge players to:
