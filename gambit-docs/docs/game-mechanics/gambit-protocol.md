@@ -10,7 +10,7 @@ The Gambit Protocol is our flagship game that combines social deduction, strateg
 
 ### Entry Phase
 - Players join with entry stake
-- Minimum 4 players, maximum 10 players
+- Minimum 4 players
 - Prize pool forms from combined entry stakes
 - Small protocol fee deducted for ecosystem sustainability
 
